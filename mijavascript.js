@@ -146,10 +146,10 @@ function cuidadoFacial() {
   );
 
   if (productoEncontrado) {
+    cantidadProducto = parseInt(prompt("Ingrese la cantidad que prefiere:"));
     const precio = productoEncontrado.precio * cantidadProducto;
     return precio;
   } else {
-    cantidadProducto = parseInt(prompt("Ingrese la cantidad que prefiere:"));
     alert("El producto ingresado no existe");
     return 0;
   }
