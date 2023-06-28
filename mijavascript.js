@@ -141,8 +141,6 @@ function cuidadoFacial() {
       opcionProducto
   );
 
-  cantidadProducto = parseInt(prompt("Ingrese la cantidad que prefiere:"));
-
   const productoEncontrado = listaProductosCuidadoFacial.find(
     (producto) => producto.nombre === productoElegido
   );
@@ -151,6 +149,7 @@ function cuidadoFacial() {
     const precio = productoEncontrado.precio * cantidadProducto;
     return precio;
   } else {
+    cantidadProducto = parseInt(prompt("Ingrese la cantidad que prefiere:"));
     alert("El producto ingresado no existe");
     return 0;
   }
@@ -167,13 +166,12 @@ function cuidadoCapilar() {
       opcionProducto
   );
 
-  cantidadProducto = parseInt(prompt("Ingrese la cantidad que prefiere:"));
-
   const productoEncontrado = listaProductosCuidadoCapilar.find(
     (producto) => producto.nombre === productoElegido
   );
 
   if (productoEncontrado) {
+    cantidadProducto = parseInt(prompt("Ingrese la cantidad que prefiere:"));
     const precio = productoEncontrado.precio * cantidadProducto;
     return precio;
   } else {
@@ -192,12 +190,13 @@ function cuidadoLabial() {
       "\n" +
       opcionProducto
   );
-  cantidadProducto = parseInt(prompt("Ingrese la cantidad que prefiere:"));
+
   const productoEncontrado = listaProductosCuidadoLabial.find(
     (producto) => producto.nombre === productoElegido
   );
 
   if (productoEncontrado) {
+    cantidadProducto = parseInt(prompt("Ingrese la cantidad que prefiere:"));
     const precio = productoEncontrado.precio * cantidadProducto;
     return precio;
   } else {
@@ -217,13 +216,12 @@ function accesorios() {
       opcionProducto
   );
 
-  cantidadProducto = parseInt(prompt("Ingrese la cantidad que prefiere:"));
-
   const productoEncontrado = listaProductosAccesorios.find(
     (producto) => producto.nombre === productoElegido
   );
 
   if (productoEncontrado) {
+    cantidadProducto = parseInt(prompt("Ingrese la cantidad que prefiere:"));
     const precio = productoEncontrado.precio * cantidadProducto;
     return precio;
   } else {
